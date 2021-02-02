@@ -2,10 +2,8 @@
 Functions for managing users:
 """
 import json
+from adaptive_learning import settings
 
-__PATH_TAB_SCHOOLS_INFOS__ = "/Users/Pro/git_repositories/"\
-    "adaptive_learning/adaptive_learning/adaptive_learning/"\
-    "data/table_schools_info.json"
 
 
 def get_school_mail_domain(school_name):
@@ -45,7 +43,7 @@ def load_table_schools_info():
     Returns the content of the json file
     in a dictionary
     """
-    with open(__PATH_TAB_SCHOOLS_INFOS__, 'r') as f_schools:
+    with open(settings.__PATH_TAB_SCHOOLS_INFOS__, 'r') as f_schools:
         table_schools_info = json.load(f_schools)
 
     return table_schools_info
