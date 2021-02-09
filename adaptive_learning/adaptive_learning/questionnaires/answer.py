@@ -1,7 +1,7 @@
 """
 Manage answers
 """
-from adaptive_learning import funcs
+from .. import funcs
 
 
 class Answer:

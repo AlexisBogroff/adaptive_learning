@@ -4,11 +4,11 @@ Manage exams
 #TODO: create a class db for functions interacting with tables
 # and extracting data (e.g. extract_question)
 
-from adaptive_learning import settings
-from adaptive_learning import funcs
-from adaptive_learning import db
-from adaptive_learning.funcs import cast, get_input
-from adaptive_learning.questionnaires.question import Question, \
+from .. import settings
+from .. import funcs
+from .. import db
+from ..funcs import cast, get_input
+from question import Question, \
     McqQuestion, DevQuestion, ExactQuestion, ApproxQuestion, CodeQuestion, \
     create_question, load_question
 

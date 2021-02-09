@@ -1,11 +1,11 @@
 """
 Manage questions
 """
-from adaptive_learning import settings
-from adaptive_learning import funcs
-from adaptive_learning.funcs import cast, get_input
-from adaptive_learning import db
-from adaptive_learning.questionnaires.answer import Answer, McqAnswer
+from .. import settings
+from .. import funcs
+from ..funcs import cast, get_input
+from .. import db
+from answer import Answer, McqAnswer
 
 
 def create_question():

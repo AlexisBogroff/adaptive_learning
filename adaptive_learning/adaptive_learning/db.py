@@ -2,8 +2,8 @@
 Interact with db
 """
 import json
-from adaptive_learning import settings
-from adaptive_learning import funcs
+from . import settings
+from . import funcs
 
 
 def _extract_sample(id, data):

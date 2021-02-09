@@ -2,7 +2,7 @@
 Functions for managing users:
 """
 import json
-from adaptive_learning import settings
+from . import settings
 
 
 
