@@ -3,12 +3,13 @@ Main test file for adaptive learning engine
 """
 import unittest
 from unittest.mock import patch
-from adaptive_learning import user, funcs, db, statistic
-from adaptive_learning.questionnaires import exam
-from adaptive_learning.questionnaires.exam import Exam
-from adaptive_learning.questionnaires.question import Question, \
+from ..adaptive_learning import user, funcs, db, statistic
+from ..adaptive_learning.questionnaires import exam
+from ..adaptive_learning.questionnaires.exam import Exam
+from ..adaptive_learning.questionnaires.question import Question, \
     create_question, McqQuestion
-from adaptive_learning.questionnaires.answer import Answer, McqAnswer
+from ..adaptive_learning.questionnaires.answer import Answer, McqAnswer
+
 
 class AnswerTestCase(unittest.TestCase):
     """
