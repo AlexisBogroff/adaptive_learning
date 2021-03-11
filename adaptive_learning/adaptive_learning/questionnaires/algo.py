@@ -233,6 +233,10 @@ predicted_matrice=model.predicted_matrice()
 #df_predicted_matrice=pd.DataFrame(model.predicted_matrice(), columns=generate_columns_name(nb_quest))
 #df_predicted_matrice.round()
 
+# Parameters on the weight algo
+# question difficulty
+# correct answer
+# feedback (1 à 4)
 
 
 
