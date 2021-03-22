@@ -53,6 +53,7 @@ class Exam:
             question = create_question()
             self._questions.append(question)
             new_question = funcs.input_bool("Create new question?")
+            # TODO: update weight matrix
 
 
     def load_question(self, load_id):
