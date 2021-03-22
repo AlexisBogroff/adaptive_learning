@@ -434,6 +434,7 @@ def Dynquestion_create_view(request, input_q_num):
 			form.save()
 			form = DynquestionForm()
 			empty_question = False
+			# Update the weight matrix by creating a new column with default values
 	else:
 		empty_question = False
 			
