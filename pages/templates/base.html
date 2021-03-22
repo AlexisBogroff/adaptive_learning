@@ -14,7 +14,7 @@
 
 <body>
 	{% url 'home' as home_url %}
-	{% if request.get_full_path != home_url %}
+	{% if user.is_authenticated %}
 		{% include 'navbar.html' %}
 	{% endif %}
 
