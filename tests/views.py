@@ -670,6 +670,8 @@ def DynMCQtest_pass_view(request,input_id_test, input_id_student, input_attempt)
 	#Get the pass_test
 	Pass_DynMCQInfo = get_object_or_404(Pass_DynMCQTest_Info, id_test=input_id_test, id_student = input_id_student, attempt = input_attempt)
 	#Get the number of the questions
+
+	# Apply algorithm for the student
 	num_questions = get_questions(DynMCQTestInfo.questions)
 	
 	#Computing less time to complete the tests
@@ -761,6 +763,7 @@ def DynMCQtest_pass_view(request,input_id_test, input_id_student, input_attempt)
 					#We check if the answer is right
 					if check_answer(pass_dynMCQtest.r_ans,num_right_answers):
 						Pass_DynMCQInfo.mark += 1
+						# here we need to add the answer in the weight matrix
 					Pass_DynMCQInfo.save()
 					question_count += 1
 					pass_dynMCQtest.save()
