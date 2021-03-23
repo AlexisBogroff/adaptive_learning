@@ -2,6 +2,7 @@
 
 import pandas as pd
 import numpy as np
+import csv
 
 #Then, I will just create few functions that will be useful later to test our code
 
